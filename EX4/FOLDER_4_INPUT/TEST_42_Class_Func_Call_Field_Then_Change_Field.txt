@@ -1,0 +1,22 @@
+class A
+{
+    int h := 5;
+    int foo(){
+    return 3;
+    }
+    void too(){
+    return;
+    }
+    void goo(){
+    h:=4;
+    }
+}
+
+
+void main()
+{
+	A bla := new A;
+    bla.goo();
+    PrintInt(bla.h);
+	return;
+}

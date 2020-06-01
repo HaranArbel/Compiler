@@ -1,0 +1,25 @@
+// Checking deep field reach
+class D
+{
+    int e() {
+        return 1;
+    }
+}
+class C
+{
+    D d;
+}
+class B
+{
+    C c;
+}
+class A
+{
+    B b;
+}
+
+A a := new A;
+
+void main() {
+    PrintInt(a.b.c.d.e());
+}

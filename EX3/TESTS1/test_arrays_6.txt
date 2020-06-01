@@ -1,0 +1,6 @@
+// Illegal to instantiate an array with child of
+
+class Father { int i := 1; }
+class Son extends Father { int j := 1; }
+
+int i := new Son[70] = new Father[79]; // this line is ILLEGAL

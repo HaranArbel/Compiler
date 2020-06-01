@@ -1,0 +1,6 @@
+// PrintString receives string as argument
+void foo(int salary)
+{
+    string somethingElse := "aaaaa";
+    PrintString(salary);
+}

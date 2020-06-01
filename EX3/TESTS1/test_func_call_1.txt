@@ -1,0 +1,17 @@
+// Test for func call params- temporary and non temporary
+array IntArray = int[]
+void foo(IntArray x)
+{
+    int i := 3;
+    return;
+}
+class Person{
+    int i;
+    IntArray func()
+    {
+        IntArray y := new int[3];
+        foo(y);
+        foo(new int[15]);
+        foo(13);
+    }
+}

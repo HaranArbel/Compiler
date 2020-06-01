@@ -1,0 +1,9 @@
+int func(){
+    return 3;
+}
+
+void main(){
+int x:=func();
+PrintInt(x);
+
+}

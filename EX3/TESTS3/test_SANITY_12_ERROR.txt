@@ -1,0 +1,3 @@
+void main(){
+	int int := 60; //ERROR
+}

@@ -1,0 +1,15 @@
+class A{
+	int a;
+}
+class B extends A{
+	int b;
+}
+class C extends B{
+	int c;
+}
+
+void main(){
+	A e := new C;
+	C j := new A; //ERROR
+
+}

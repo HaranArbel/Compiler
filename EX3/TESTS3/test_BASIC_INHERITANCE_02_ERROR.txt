@@ -1,0 +1,52 @@
+class Bug{
+	int isBad;
+	int isInProduction;
+	int line;
+	string explain;
+	void panic(){
+		explain := "AAAAAAAAAAAAAAAAAH";
+	}
+	Bug generateBug(Bug b){
+		return b;
+	}
+}
+class Bee extends Bug{
+	void bzzz(){
+		PrintString(explain);
+	}
+	void panic(){
+		explain:="WhereAreTheFlowers";
+	}
+}
+class Ladybug extends Bug{
+	int where(){
+		return line;
+	}
+	void meet(Ladybug lb){
+		explain := lb.explain;
+		return;
+	}
+}
+class Ant extends Bug{
+	Ant next;
+	int isAnt(Bug b){
+		return 0;
+	}
+	Ant getNext(){
+		return next;
+	}
+	void setNext(Ant nextAnt){
+		next:= nextAnt;
+		explain := "IMakeNewFriends";
+		if(next = nil){
+			return;
+		}
+	}
+	int panic(){  //ERROR
+		explain := "mmm";
+	}
+}
+
+
+class Spider{
+}

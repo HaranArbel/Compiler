@@ -1,0 +1,3 @@
+// Assignments of variables to class field declarations are not allowed
+class Father { int i := 9; }
+class Son extends Father { int j := i; }

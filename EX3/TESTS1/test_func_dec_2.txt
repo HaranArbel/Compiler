@@ -1,0 +1,6 @@
+// Unknown type of return
+Shuker foo(int a)
+{
+    int a := 1;
+    return a;
+}

@@ -1,0 +1,9 @@
+// Should not be able to override a primitive integer with a function
+class Father
+{
+   int foo;
+}
+class Son extends Father
+{
+    string foo(){return "a";}
+}

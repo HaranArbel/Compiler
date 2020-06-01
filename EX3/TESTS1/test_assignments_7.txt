@@ -1,0 +1,7 @@
+// Init functions can be used to initialize data members to non constant values
+class IntList
+{
+    void Init() { tail := new IntList; }
+    int head;
+    IntList tail;
+}

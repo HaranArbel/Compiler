@@ -1,0 +1,10 @@
+class Animal{
+	string getName(){
+		return name;
+	}
+	void setName(string newName){
+		name := newName;
+		return;
+	}
+	string name;
+}

@@ -1,0 +1,20 @@
+// Illegal to override return value of a function member
+class father {
+    int i := 1;
+}
+
+class son extends father {
+    int j := 2;
+}
+
+class A {
+    father method1() {
+        int i := 1;
+    }
+}
+
+class B extends A {
+    son method1() {
+        int i := 1;
+    }
+}

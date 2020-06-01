@@ -1,0 +1,13 @@
+class Eddard{
+	void say(){
+		PrintString("WinterIsComming");
+	}
+	int dead;
+}
+
+class Jon extends Eddard{
+	void say(){
+		PrintString("YouKnowNothing");
+	}
+	int dead; //ERROR
+}

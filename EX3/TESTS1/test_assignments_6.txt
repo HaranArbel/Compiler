@@ -1,0 +1,6 @@
+// Assignments of instantiations to class field declarations are not allowed
+class IntList
+{
+    int head := -1;
+    IntList tail := new IntList;
+}

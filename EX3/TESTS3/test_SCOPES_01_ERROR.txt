@@ -1,0 +1,17 @@
+int g;
+class A{
+	int g;
+}
+
+void func(int g){
+	A a := new A;
+	if(1=1){
+		int g;
+	}
+	g:=3;
+	a.g := 3;
+}
+int bomb(){
+	g:=4;
+	a.g := 3; //ERROR
+}

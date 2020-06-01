@@ -1,0 +1,6 @@
+// Ok to shadow a variable name
+int salary := 7800;
+void foo()
+{
+    string salary := "aaaaaaa";
+}

@@ -1,0 +1,5 @@
+array ARR = int[]
+
+void main(){
+	ARR arr = new int; //ERROR
+}

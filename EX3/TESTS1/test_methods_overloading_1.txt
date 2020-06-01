@@ -1,0 +1,10 @@
+// Overloading is not legal
+class Father
+{
+    int foo(int i) { return 8; }
+}
+
+class Son extends Father
+{
+    void foo(int j) {  PrintInt(8); }
+}

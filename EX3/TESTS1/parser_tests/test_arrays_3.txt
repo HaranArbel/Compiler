@@ -1,0 +1,5 @@
+// Array cannot be declared not in global scope this is a parsing error
+void main()
+{
+    array gradesArray = int[]
+}

@@ -1,0 +1,22 @@
+// overriding int with string is forbidden
+class Father
+{
+   int full := 12;
+   string foo(int lord){return "a";}
+}
+class Son extends Father
+{
+   string lala;
+   int bar := 12;
+   int lool;
+}
+
+class Grandson extends Son
+{
+   int ManOfPeace;
+}
+
+class Nin extends Grandson
+{
+   string full;
+}

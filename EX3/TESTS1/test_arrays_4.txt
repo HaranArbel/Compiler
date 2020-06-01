@@ -1,0 +1,8 @@
+// Illegal to instantiate an array with child of
+
+class Father { int i := 1; }
+class Son extends Father { int j := 1; }
+
+array IDSArray = Father[]
+
+IDSArray i := new Son[8];

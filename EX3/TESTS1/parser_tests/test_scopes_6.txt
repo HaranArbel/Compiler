@@ -1,0 +1,9 @@
+// Class cannot be declared inside a class this is a parser error
+class Person {
+
+    int name := 1;
+
+    class Pet {
+        int name := 1;
+    }
+}

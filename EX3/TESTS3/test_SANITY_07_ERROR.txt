@@ -1,0 +1,11 @@
+class MyClass{
+	int x;
+}
+
+int get(MyClass mc){
+	return mc.x;
+}
+
+MyClass getObj(){
+	return MyClass; //ERROR
+}

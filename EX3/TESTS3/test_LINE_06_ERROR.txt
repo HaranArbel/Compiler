@@ -1,0 +1,26 @@
+class MyClass{
+	int x;
+
+
+
+	void foo(int n, string s, murloc m){ //ERROR
+
+
+
+
+
+
+
+
+
+		return ;
+
+
+
+
+
+	}
+
+
+	
+}

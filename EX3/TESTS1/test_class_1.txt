@@ -1,0 +1,9 @@
+// Cannot extend class Father that was not declared yet
+class Son extends Father
+{
+    int bar;
+}
+class Father
+{
+    void foo() { PrintInt(8); }
+}

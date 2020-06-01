@@ -1,0 +1,1 @@
+array Arr = int[] Arr arr = new int[12]; int var = 8; arr[var] := 123;

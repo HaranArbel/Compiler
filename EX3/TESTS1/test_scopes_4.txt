@@ -1,0 +1,11 @@
+// Can declare a class type member inside that class and then shadow it in function member
+string myvar := "aaa";
+class Father
+{
+    Father myvar := nil;
+    void foo()
+    {
+          int myvar := 100;
+          PrintInt(myvar);
+    }
+}

@@ -1,0 +1,4 @@
+void this(){
+	void x; //ERROR
+	return x;
+}

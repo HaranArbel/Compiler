@@ -1,0 +1,15 @@
+// Overloading is not allowed
+class Test
+{
+    int foo(int a)
+    {
+        int b := 1;
+        return a;
+    }
+
+    int foo(int b, int a)
+    {
+        int a := 1;
+        return a;
+    }
+}

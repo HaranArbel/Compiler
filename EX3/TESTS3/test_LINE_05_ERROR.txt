@@ -1,0 +1,9 @@
+class MyClass{
+	int x;
+	int y;
+	int z;
+	inf oops; //ERROR
+	int a1;
+	int a2;
+	int a3;
+}

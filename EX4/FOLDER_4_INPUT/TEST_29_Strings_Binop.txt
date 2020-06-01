@@ -1,0 +1,8 @@
+void main(){
+
+    string x:= "Hello";
+    string y:= "Haran";
+    string z:=x+y;
+    PrintString(z);
+
+}

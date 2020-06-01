@@ -1,0 +1,5 @@
+// Can return a division by two integers
+class Father
+{
+    int foo() { return 8/0; }
+}

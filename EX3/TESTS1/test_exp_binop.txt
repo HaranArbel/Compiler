@@ -1,0 +1,2 @@
+// Checking that integer and string cannot be added
+int i := 8 < 9;

@@ -1,0 +1,10 @@
+// Cannot override function with int
+class Father
+{
+   string foo(){return "a";}
+
+}
+class Son extends Father
+{
+   int foo;
+}

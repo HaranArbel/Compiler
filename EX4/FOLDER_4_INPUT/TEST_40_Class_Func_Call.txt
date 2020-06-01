@@ -1,0 +1,14 @@
+
+class Person{
+
+ int f(){
+ return 1;
+ }
+
+}
+void main(){
+
+Person p:= new Person;
+PrintInt(p.f());
+
+}

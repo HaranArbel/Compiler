@@ -1,0 +1,25 @@
+class A
+{
+int x:=5;
+    int foo(){
+    return 4;
+    }
+}
+class B extends A{
+    int goo(){
+    return 3;
+    }
+}
+class C extends B{
+
+    int too(){
+    return 2;
+    }
+}
+
+void main()
+{
+	C bla := new C;
+    PrintInt(bla.x);
+	return;
+}

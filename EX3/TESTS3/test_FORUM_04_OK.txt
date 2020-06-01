@@ -1,0 +1,6 @@
+class A{
+	int B(){return 8;}
+}
+class B{
+	int x;
+}

@@ -1,0 +1,10 @@
+// Cannot declare variable of type class that was not declared yet
+class Edge
+{
+    Vertex u;
+    Vertex v;
+}
+class Vertex
+{
+    int weight;
+}

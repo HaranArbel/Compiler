@@ -1,0 +1,3 @@
+// Assign nil to class type should be ok
+class Father { int i; }
+Father f := nil;

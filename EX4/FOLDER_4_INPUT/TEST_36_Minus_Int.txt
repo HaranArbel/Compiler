@@ -1,0 +1,16 @@
+int func(int y){
+    int x:=0;
+    while(x>-3){
+        PrintInt(y);
+        x:=x-1;
+    }
+    return 3;
+}
+
+void main(){
+
+int y:=-7;
+int x:=func(y);
+PrintInt(x);
+
+}

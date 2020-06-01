@@ -1,0 +1,108 @@
+.data
+string_access_violation: .asciiz "Access Violation"
+string_illegal_div_by_0: .asciiz "Division By Zero"
+string_invalid_ptr_dref: .asciiz "Invalid Pointer Dereference"
+string_func_func: .asciiz "func"
+string_func_main: .asciiz "main"
+.text
+Label_0_func_s:
+	addi $sp,$sp,-8
+	addi $t0,$fp,-8
+	li $t1,0
+	sw $t1,0($t0)
+Label_3_WHILE:
+	addi $t0,$fp,-8
+	lw $t0,0($t0)
+	li $t1,-3
+	slt $t0,$t1,$t0
+	beq $t0,$zero,Label_4_IF_FALSE
+	addi $t0,$fp,4
+	lw $t0,0($t0)
+	move $a0,$t0
+	li $v0,1
+	syscall
+	li $a0, 32
+	li $v0, 11
+	syscall
+	addi $t0,$fp,-8
+	addi $t1,$fp,-8
+	lw $t3,0($t1)
+	li $t4,1
+	li $t1,32767
+	li $t2,-32768
+	sub $t3,$t3,$t4
+	blt $t1,$t3,Label_10_overflow_h
+	blt $t3,$t2,Label_11_overflow_l
+	j Label_12_no_overflow
+Label_10_overflow_h:
+	li $t1,32767
+	j Label_9_end
+Label_11_overflow_l:
+	li $t1,-32768
+	j Label_9_end
+Label_12_no_overflow:
+	move $t1,$t3
+	j Label_9_end
+Label_9_end:
+	sw $t1,0($t0)
+	j Label_3_WHILE
+Label_4_IF_FALSE:
+	li $t0,3
+	move $v0,$t0
+	j Label_1_func_e
+Label_1_func_e:
+	addi $sp,$sp,8
+	jr $ra
+real_main:
+	addi $fp,$sp,0
+	sw $zero,0($fp)
+	addi $sp,$sp,-12
+	addi $t0,$fp,-8
+	li $t1,-7
+	sw $t1,0($t0)
+	addi $t0,$fp,-12
+	addi $sp,$sp,-44
+	sw $fp,0($sp)
+	la $t1,string_func_func
+	sw $t1,-4($fp)
+	addi $t1,$fp,-8
+	lw $t1,0($t1)
+	sw $t1,4($sp)
+	sw $ra,8($sp)
+	sw $t0,12($sp)
+	sw $t1,16($sp)
+	sw $t2,20($sp)
+	sw $t3,24($sp)
+	sw $t4,28($sp)
+	sw $t5,32($sp)
+	sw $t6,36($sp)
+	sw $t7,40($sp)
+	addi $fp,$sp,0
+	jal Label_0_func_s
+	lw $ra,8($fp)
+	lw $t0,12($fp)
+	lw $t1,16($fp)
+	lw $t2,20($fp)
+	lw $t3,24($fp)
+	lw $t4,28($fp)
+	lw $t5,32($fp)
+	lw $t6,36($fp)
+	lw $t7,40($fp)
+	addi $sp,$fp,44
+	lw $fp,0($fp)
+	move $t1,$v0
+	sw $t1,0($t0)
+	addi $t0,$fp,-12
+	lw $t0,0($t0)
+	move $a0,$t0
+	li $v0,1
+	syscall
+	li $a0, 32
+	li $v0, 11
+	syscall
+Label_2_main_e:
+	jr $ra
+main:
+	jal real_main
+	li $v0,10
+	syscall

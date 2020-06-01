@@ -1,0 +1,3 @@
+// Assignments of expression results to class field declarations are not allowed
+class Father { int foo() { return 90; } }
+class Son extends Father { int j := foo(); }

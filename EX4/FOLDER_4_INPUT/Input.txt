@@ -1,0 +1,26 @@
+class Person
+{
+	int age := 18;
+
+	int getAge()  { 
+		return age;   
+	}
+
+	int birthday() { 
+		age := age+1; 
+		return 3;
+	}
+}
+
+class Student extends Person
+{
+	int y;
+	
+}
+
+
+void main()
+{
+	int x := 1;
+	
+}

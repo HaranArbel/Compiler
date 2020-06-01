@@ -1,0 +1,79 @@
+//Basic class declaration
+class Dog
+{
+	void printme(int x) {PrintInt(dog);}
+	int dog;
+}
+
+
+//Inheritance and method overriding
+class Catdog extends Dog{
+	void printme(int meow) { 
+		//note that cat dog should be in Symbol-table
+		meow := 2 * meow + cat + dog;
+		PrintInt(meow);
+	}
+	int cat;
+}
+
+array TheDogs = Dog[]
+array TheCats = Catdog[]
+
+//Polymorphisem
+void bark(Dog dog){
+	PrintInt(dog.dog);
+}
+
+Dog howl(TheDogs dogs){
+	int i := 0;
+	while(i < 10){
+		dogs[i].dog := dogs[i+1].dog-1;
+		i := i+1;
+	}
+	return dogs[0];
+}
+
+int main(int argc){
+	Catdog cat := new Catdog;
+	Dog notDog := new Catdog;
+	Catdog deadCat := nil;
+	bark(new Dog);
+	bark(notDog);
+	bark(cat);
+	bark(new Catdog);
+	bark(nil);
+	bark(deadCat);
+
+	int five := 5;
+	int manyManyDogs := 1234;
+	TheDogs dogs := new Dog[manyManyDogs];
+	dogs[0] := new Dog;
+	dogs[1] := new Catdog;
+	dogs[2] := cat;
+	dogs[2+1] := notDog;
+	dogs[2+2] := cat;
+	dogs[five] := deadCat;
+	dogs[five+dogs[0].dog] := dogs[manyManyDogs-1];
+	dogs[five+dogs[0].dog + 1] := nil;
+	dogs := nil;
+
+	Dog resultingDog := howl(nil);
+	resultingDog := howl(dogs);
+
+	bark(dogs[0]);
+
+	//Just some sanity check ;)
+	if(argc > 0){
+		if(argc > 1){
+			while(argc > 2){
+				return argc;
+			}
+			return argc*2;
+		}
+		while(4){
+			return 5;
+		}
+		return argc * -1;
+	}
+	return 0;
+}

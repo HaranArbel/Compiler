@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="EX1/FOLDER_2_SRC"/>
+	<classpathentry kind="src" path="EX4"/>
+	<classpathentry excluding="AST/" kind="src" path="EX2"/>
+	<classpathentry kind="src" path="EX2/AST"/>
+	<classpathentry kind="lib" path="EX1/FOLDER_7_EXTERNAL_JARS/java-cup-11b-runtime.jar"/>
+	<classpathentry kind="lib" path="EX1/FOLDER_7_EXTERNAL_JARS/java-cup-11b.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

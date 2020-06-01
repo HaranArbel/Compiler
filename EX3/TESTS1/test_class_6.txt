@@ -1,0 +1,11 @@
+class Father { int i := 1; }
+
+class Son { int j := 1; }
+
+class Markov { Son getMe() { PrintInt(1); } }
+
+class MarkovChain extends Markov {
+    Father getMe() {
+        PrintInt(1);
+    }
+}

@@ -1,0 +1,9 @@
+// Cannot assign an array with size x to another array with size x with the same type
+array gradesArray  = int[]
+array IDsArray     = int[]
+IDsArray    i := new int[8];
+gradesArray g := new int[8];
+
+void foo() {
+    i := g;
+}

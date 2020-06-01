@@ -1,0 +1,9 @@
+// Variable name cannot be of reserved keyword
+
+class Person {
+    int i := 1;
+}
+
+void name() {
+    Person Person := nil;
+}

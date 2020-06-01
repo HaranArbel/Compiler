@@ -1,0 +1,4 @@
+// nil sent instead of an integer array is semantically allowed
+array IntArray = int[]
+void F(IntArray A){ PrintInt(A[8]); }
+void main(){ F(nil); }

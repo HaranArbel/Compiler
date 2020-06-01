@@ -1,0 +1,19 @@
+class Eddard{
+	void say(){
+		PrintString("WinterIsComming");
+	}
+	int dead;
+}
+
+class Jon extends Eddard{
+	void say(){
+		PrintString("YouKnowNothing");
+	}
+	int alive;
+}
+
+void main(){
+	Eddard e := new Jon;
+	Jon j := new Eddard; //ERROR
+
+}

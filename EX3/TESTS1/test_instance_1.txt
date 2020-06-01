@@ -1,0 +1,3 @@
+//check that array is not declared with an instance
+int j;
+array x = j[]

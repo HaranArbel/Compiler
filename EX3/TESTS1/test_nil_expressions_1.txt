@@ -1,0 +1,4 @@
+// nil sent instead of a (Father) class is semantically allowed.
+class Father { int i; }
+void foo(Father f){ PrintInt(f.i); }
+void main(){ foo(nil); }

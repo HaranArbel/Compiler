@@ -1,0 +1,12 @@
+// Check failure on two classes with the same name.
+class Person
+{
+	int ID;
+	int age;
+}
+
+class Person
+{
+	int ID;
+	int age;
+}

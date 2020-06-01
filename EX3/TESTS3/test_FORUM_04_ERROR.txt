@@ -1,0 +1,4 @@
+int a;
+class a{ //ERROR
+	int x;
+}

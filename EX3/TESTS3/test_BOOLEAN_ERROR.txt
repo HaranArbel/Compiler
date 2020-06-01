@@ -1,0 +1,6 @@
+int main(){
+	int x := 6>5;
+	string y;
+	y := (y>7)=(x<4); //ERROR
+	return y=2;
+}

@@ -1,0 +1,7 @@
+//check that class is not declared with an instance
+class Person
+{
+    int i;
+}
+Person j;
+Person p := new j;

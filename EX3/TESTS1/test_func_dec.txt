@@ -1,0 +1,6 @@
+// Double declaration of parameters for function
+int foo(int a, int a)
+{
+    int aa := 1;
+    return aa;
+}

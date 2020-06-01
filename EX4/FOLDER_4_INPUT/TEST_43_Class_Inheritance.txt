@@ -1,0 +1,19 @@
+class A
+{
+    int foo(){
+    return 4;
+    }
+}
+class B extends A{
+    int foo(){
+    return 3;
+    }
+}
+
+
+void main()
+{
+	B bla := new B;
+    PrintInt(bla.foo());
+	return;
+}

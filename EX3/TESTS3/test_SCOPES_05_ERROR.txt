@@ -1,0 +1,23 @@
+int g;
+class A{
+	int g;
+}
+
+
+int getNumber(int x){
+	return 4;
+}
+int getNumber(int x, string y){ //ERROR
+	return 5;
+}
+
+void func(int g){
+	A a := new A;
+	if(1=1){
+		int g;
+	}
+	g:=3;
+}
+int bomb(){
+	g:=4;
+}

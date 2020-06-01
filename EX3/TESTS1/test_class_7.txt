@@ -1,0 +1,16 @@
+// Using reference to a class within that class should be ok
+class Tree {
+    Tree left := nil;
+    Tree right := nil;
+
+    void PrintMe()
+    {
+        PrintInt(key);
+
+        if (1 - (left = nil)) { left.PrintMe(); }
+
+        if (1 - (right = nil)) { right.PrintMe(); }
+    }
+
+    int key := 0;
+}

@@ -1,0 +1,6 @@
+void main(){
+	int Int;
+	Int int; //ERROR!
+
+	return;
+}

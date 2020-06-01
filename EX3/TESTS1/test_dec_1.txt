@@ -1,0 +1,5 @@
+// Variable name cannot be of reserved keyword
+
+void name() {
+    int int := 1;
+}

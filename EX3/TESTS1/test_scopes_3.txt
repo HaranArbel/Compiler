@@ -1,0 +1,6 @@
+// Cannot redeclare var name in the same scope
+void foo(string salary)
+{
+    int salary := 7800;
+    PrintString(salary);
+}

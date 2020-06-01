@@ -1,0 +1,7 @@
+// The type of the condition inside if statements is the primitive type int
+string func(int i) {
+    if (func(1)) {
+        int i := 1;
+    }
+    return "bla";
+}

@@ -1,0 +1,10 @@
+class A{
+	int g;
+}
+void func(){
+	A a := new A;
+	if(1=1){
+		int g;
+	}
+	g:=3; //ERROR
+}

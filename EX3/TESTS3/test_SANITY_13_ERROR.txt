@@ -1,0 +1,11 @@
+class A{
+	A foo(){
+		return new A;
+	}
+}
+
+class B extends A{
+	B foo(){ //ERROR
+		return new B;
+	}
+}

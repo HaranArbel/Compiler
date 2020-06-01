@@ -1,0 +1,4 @@
+// Instantiating a son of a class as type class should be ok
+class Father { int i; }
+class Son extends Father { int j; }
+Father f := new Son;

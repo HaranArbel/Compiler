@@ -1,0 +1,9 @@
+// Func cannot be declared inside a Func this is a parser error
+void outerFunc () {
+
+    PrintInt(1);
+
+    void innerFunc () {
+        PrintInt(1);
+    }
+}

@@ -1,0 +1,26 @@
+class MyClass{
+	int x;
+
+
+
+	string foo(int n, string s){
+
+
+
+
+
+
+		x:=4;
+
+
+		return x; //ERROR
+
+
+
+
+
+	}
+
+
+	
+}

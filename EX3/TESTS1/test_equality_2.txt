@@ -1,0 +1,5 @@
+// Should be able to check equality of string variable and string constant
+int Check(string s)
+{
+    return s = "LosPollosHermanos";
+}

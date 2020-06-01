@@ -1,0 +1,6 @@
+array A = int[]
+array B = int[]
+
+int main(){
+	return A=B; //ERROR
+}

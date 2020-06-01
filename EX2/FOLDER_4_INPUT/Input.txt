@@ -1,0 +1,5 @@
+class Person
+{
+    int left;
+    int left;
+}

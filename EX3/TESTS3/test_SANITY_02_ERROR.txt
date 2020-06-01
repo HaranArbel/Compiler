@@ -1,0 +1,11 @@
+class Person{
+	string name;
+}
+
+
+void main(){
+	Person Student;
+	Student Person; //ERROR
+
+	return;
+}

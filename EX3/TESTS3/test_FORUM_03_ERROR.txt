@@ -1,0 +1,7 @@
+array numbers = int[]
+
+class B{
+	numbers bar1;
+	numbers bar2 := nil;
+	numbers bar3 := new int[888]; //ERROR
+}

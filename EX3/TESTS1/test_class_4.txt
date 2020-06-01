@@ -1,0 +1,6 @@
+// Using variable before declaring it in a class should be legal
+class UseBeforeDef
+{
+    void foo() { PrintInt(i); }
+    int i;
+}

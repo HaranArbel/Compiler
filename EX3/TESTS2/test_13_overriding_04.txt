@@ -1,0 +1,10 @@
+class Father
+{
+   string foo(){return "a";}
+}
+class Son extends Father
+{
+   string lala;
+   int bar := 12;
+   int foo;
+}

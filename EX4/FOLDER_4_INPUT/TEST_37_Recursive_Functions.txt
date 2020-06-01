@@ -1,0 +1,18 @@
+
+int g(int i){
+    if(i=2){
+    g(1);
+    }
+    if(i=1){
+        PrintTrace();
+    }
+    return 3;
+
+
+}
+
+void main(){
+g(2);
+PrintInt(1);
+
+}

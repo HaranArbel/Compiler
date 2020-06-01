@@ -1,0 +1,8 @@
+int foo(){
+	return 5;
+}
+class A{
+	int foo(){
+		return 7;
+	}
+}

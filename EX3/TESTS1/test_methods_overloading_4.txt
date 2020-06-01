@@ -1,0 +1,9 @@
+// Cannot override class variable member
+class Father
+{
+    int foo;
+}
+class Son extends Father
+{
+    string foo;
+}

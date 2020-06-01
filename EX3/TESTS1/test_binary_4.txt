@@ -1,0 +1,7 @@
+// Can perform binary operation between integers and return binary result expression as int
+class Father { int j; int k; }
+int foo(Father f)
+{
+    int i := 620;
+    return i < f.j;
+}

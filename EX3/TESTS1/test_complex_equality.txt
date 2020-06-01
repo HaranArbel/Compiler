@@ -1,0 +1,160 @@
+// check assignments and equalities between different types including temporaries
+array IntArray = int[]
+class Person
+{
+    int i;
+    void foo()
+    {
+        IntArray x := new int[10];
+        IntArray y:= x;
+        IntArray z;
+        z := new int[12];
+        // both temp
+        if(new int[14] = new int[13])
+        {
+            return;
+        }
+        //one temp
+        if(new int[14] = x)
+        {
+            return;
+        }
+        if(new int[14] = y)
+        {
+            return;
+        }
+        if(new int[14] = z)
+        {
+            return;
+        }
+        //both non-temp
+        if(x = y)
+        {
+            return;
+        }
+        if(x = z)
+        {
+            return;
+        }
+        if(y = z)
+        {
+            return;
+        }
+        // nil check
+        while(new int[13] = nil)
+        {
+            return;
+        }
+        while(z = nil)
+        {
+            return;
+        }
+        while(nil = nil)
+        {
+            return;
+        }
+        while(nil = x)
+        {
+            return;
+        }
+        while(y = nil)
+        {
+            return;
+        }
+    }
+}
+array PersonArray = Person[]
+class Son extends Person
+{
+        void foo()
+        {
+            Person x := new Person;
+            Person y:= x;
+            Person z;
+            z := new Person;
+            // both temp
+            if(new Person = new Person)
+            {
+                return;
+            }
+            //one temp
+            if(new Person = x)
+            {
+                return;
+            }
+            if(new Person = y)
+            {
+                return;
+            }
+            if(new Person = z)
+            {
+                return;
+            }
+            //both non-temp
+            if(x = y)
+            {
+                return;
+            }
+            if(x = z)
+            {
+                return;
+            }
+            if(y = z)
+            {
+                return;
+            }
+            // nil check
+            while(new Person = nil)
+            {
+                return;
+            }
+            while(z = nil)
+            {
+                return;
+            }
+            while(nil = nil)
+            {
+                return;
+            }
+            while(nil = x)
+            {
+                return;
+            }
+            while(y = nil)
+            {
+                return;
+            }
+            // test inheritance
+            if(new Son = new Person)
+            {
+                return;
+            }
+            PersonArray w := new Person[12];
+            PersonArray r := w;
+            //test complex arrays
+            if(new Person[3] = w)
+            {
+                return;
+            }
+            if(r = w)
+            {
+                return;
+            }
+            if( new Person[3] = new Person[3])
+            {
+                return;
+            }
+            //test inheritance between arrays- unclear what the result should be
+            if( new Person[3] = new Son[3])
+            {
+                return;
+            }
+            //here should fail
+            if( new int[3] = new string[5])
+            {
+                return 5;
+            }
+        }
+}
+
+

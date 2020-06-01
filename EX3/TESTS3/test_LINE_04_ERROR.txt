@@ -1,0 +1,17 @@
+void main(){
+	int x;
+	if(x > 4){
+
+
+
+
+
+
+
+		x := "hello";  //ERROR
+
+
+
+
+	}
+}

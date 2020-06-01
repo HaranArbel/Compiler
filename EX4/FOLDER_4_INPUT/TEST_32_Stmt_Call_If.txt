@@ -1,0 +1,10 @@
+void func(){
+
+    if(5=5){
+    PrintInt(5);
+    }
+}
+
+void main(){
+func();
+}
